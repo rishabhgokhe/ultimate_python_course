@@ -15,6 +15,14 @@
       background-position: 0% 50%;
     }
 }
+#nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.298); /* Adjust the opacity for the glassmorphic effect */
+    backdrop-filter: blur(10px); /* Apply a blur effect to create the glassmorphic effect */
+    padding: 10px 20px;
+    z-index: 100; /* Ensure the navbar appears above other content */
+}
 .logo {
     height: 30px;
 }
@@ -59,10 +67,23 @@
     font-weight: bold;
 }
 
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Apply the font to an element */
+
+.resources {
+    font-family: 'Pacifico', 'Poppins' ;
+    font-size: 3.5rem;
+    color: #ff5300;
+}
 .page-heading h4 {
     width: 60%;
     position: relative;
     left: 20%;
+    font-family: "Poppins";
+    color: #a0a0a0;
+
 }
 a:hover {
     color: white;
